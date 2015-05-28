@@ -1,0 +1,53 @@
+  delay(5000);
+END: AT+CWJAP="KV_2","vltavsky"
+RECEIVED: OK
+SEND: AT+CIPSTART="TCP","184.106.153.149",80
+GET /update?key=0RI7PCVZA33DNGT9&field1=20
+SEND: AT+CIPSEND=44
+>GET /update?key=0RI7PCVZA33DNGT9&field1=20
+
+----------------------------------------------------
+OK
+AT+CWJAP="KV_2","vltavsky"
+
+
+OK
+AT+CIPSTART="TCP","184.106.153.149",80
+
+
+OK
+Linked
+AT+CIPSEND=120
+
+> GET /update?key=0RI7PCVZA33DNGT9&field1=20
+
+SEND OK
+
++IPD,1:8
+OK
+
+OK
+Unlink
+
+--------------------
+GET /channels/22079/feed.json?key=0RI7PCVZA33DNGT9&results=1
+----------------
+
+Linked
+AT+CIPSEND=62
+
+> GET /channels/22079/feed.json?key=0RI7PCVZA33DNGT9&results=1
+
+GET /channels/22079/feeds/last
+GET /channels/22079/fields/1/last
+
+SEND OK
+
++IPD,229:{"channel":{"id":22079,"name":"test","field1":"field1","created_at":"2014-12-30T18:27:58Z","updated_at":"2015-10T43:6""atetyi"41},fes:{cetda""050-30:8:6""nr_d:00"il1:1."]
+O
+
+OK
+Unlink
+
+
+
